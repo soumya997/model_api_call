@@ -10,7 +10,10 @@ def home():
   qs = request.args.get('qs')
   qs_url = qs.replace(' ', '%20')
   ans = requests.get(url+ "/api?qs=" + qs_url)
-  return ans
+  
+  return ans.json()
+
+
 
 if __name__ == "__main__":
   app.run()
