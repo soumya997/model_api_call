@@ -20,11 +20,11 @@
 from flask import Flask,request
 from flask import jsonify
 import requests
-from flask_ngrok import run_with_ngrok
+# from flask_ngrok import run_with_ngrok
 from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 CORS(app, support_credentials=True)
-run_with_ngrok(app)
+# run_with_ngrok(app)
 url = "http://652f-104-199-206-225.ngrok.io"
 @app.route("/api",methods=['GET'])
 @cross_origin(supports_credentials=True)
