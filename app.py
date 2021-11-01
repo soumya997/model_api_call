@@ -25,7 +25,7 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 # run_with_ngrok(app)
-url = "http://b8c4-34-86-192-7.ngrok.io"
+url = "http://1436-34-70-125-190.ngrok.io"
 @app.route("/api",methods=['GET'])
 @cross_origin(supports_credentials=True)
 def home():
